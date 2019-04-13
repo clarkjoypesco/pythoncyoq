@@ -11,9 +11,11 @@ questions_list = [['What is one plus one in math?', 'Who killed Magellan?', 'Who
                   ['If each apple cost 3 pesos How much would 5 apples cost in total?',
                    'In Science, What is H2O?',
                    'Sa wikang filipino ano ang tagalog ng slippers?'],
+                   ['What programming language has logo of cup of coffee?', 'Extension file of Hypertext Markup Language?', 'First Name of Miss Universe Wurtzbach?']
                   ]
 answers_list = [['2', 'lapulapu', 'duterte'],
-                ['15', 'water', 'tsinelas']]
+                ['15', 'water', 'tsinelas'],
+                ['java', 'html', 'pia']]
 name_input = raw_input('What is your name? \n')
 
 print 'Hello ' + name_input + ' Welcome to Genius Quiz!'
@@ -51,8 +53,13 @@ while i < 1:
                 print 'Congratulations!! You have completed Level ' + str(level+1)
                 score = 0
                 level+=1
-                if level == 2:
-                    i+=1
+                if level == 3:
+                    level_input = raw_input('Do You want to try Again? yes or no\n')
+                    if level_input == 'no':
+                        i+=1
+                    if level_input == 'yes':
+                        score = 0
+                        level = 0
 
         else:
             print 'Your Answer: ' + str(answer_input) + ' is incorrect!'
