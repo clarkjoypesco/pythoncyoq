@@ -18,7 +18,7 @@ answers_list = [['2', 'lapulapu', 'duterte'],
                 ['java', 'html', 'pia']]
 name_input = raw_input('What is your name? \n')
 
-print 'Hello ' + name_input + ' Welcome to Genius Quiz!'
+print 'Hello ' + name_input + ' Welcome to Brainy Quiz!'
 user_input = raw_input('Select Difficulty: \n easy \n medium \n hard \n')
 print 'You selected: ' + user_input + ' Difficulty'
 print 'Loading level at the moment....'
