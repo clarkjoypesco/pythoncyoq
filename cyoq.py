@@ -1,7 +1,6 @@
-# cyoq = Code Your Own Quiz
+# cyoq = Code Your Own Quiz by Clark Joy Pesco
 # Game has 3 or 4 levels
 # Immediately after running the program, user is prompted to select a difficulty level from easy / medium / hard
-
 
 # track lives
 lives = 3
@@ -92,7 +91,7 @@ while i < 1:
             score += 1
 
             # shows the current score in the screen
-            print 'Current Score: ' + str(score) + ' is correct!'
+            print 'Score: ' + str(score) 
 
             # checks if score is equal to 3
             if score == 3:
