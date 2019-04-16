@@ -31,8 +31,8 @@ name_input = raw_input('What is your name? \n')
 
 # prints Welcome Screen
 print 'Hello ' + name_input + ' Welcome to Brainy Quiz!'
-
-# prompts the user to select difficulty
+#=============================start======================================
+ # prompts the user to select difficulty
 user_input = raw_input('Select Difficulty: \n easy \n medium \n hard \n')
 print 'You selected: ' + user_input + ' Difficulty'
 print 'Loading level at the moment....'
@@ -56,13 +56,14 @@ def level_in_pos(difficulty, difficulty_list):
 level = level_in_pos(user_input, difficulty_list)
 
 
-# this variable is myflag so when i is greater than or equal to 1
-# the game is finished
-i = 0
+# Change the variable to a boolean type
+# So while gameOver is False it will continue running the game
 
+gameOver = False;
 # making the game in infinite loop
 # inside it is the main logic of the game
-while i < 1:
+while gameOver != True:
+
     # tracks the index of questions and answers list
     index = 0
     # gets a specific category in the questions liss
@@ -112,7 +113,8 @@ while i < 1:
                     
                     # chekcs the user input if its no it quits the game
                     if level_input == 'no':
-                        i += 1
+                        
+                        gameOver = True
                     #checks the user input if its yes it restarts the game
                     if level_input == 'yes':
                         score = 0
@@ -138,7 +140,8 @@ while i < 1:
                  
                 # chekcs the user input if its no it quits the game
                 if level_input == 'no':
-                        i += 1
+                      
+                        gameOver = True
                         break
 
                 #checks the user input if its yes it restarts the game
@@ -150,7 +153,8 @@ while i < 1:
                      # quits the game
                     print 'Exit Game'
                     print 'Thank you for playing Brainy Quiz'
-                    i += 1
+                  
+                    gameOver = True
                     break
              
             # shows the lives of user in the game
