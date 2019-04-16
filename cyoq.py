@@ -159,3 +159,7 @@ while gameOver != True:
              
             # shows the lives of user in the game
             print 'You have ' + str(lives) + ' lives left'
+
+
+#Future Update
+# Read txt file question and txt file answer
